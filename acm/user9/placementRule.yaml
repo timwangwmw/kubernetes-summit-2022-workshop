@@ -2,7 +2,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   name: test-app-placement-1
-  namespace: acm-template
+  namespace: user9
   labels:
     app: test-app
 spec:

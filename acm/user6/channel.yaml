@@ -1,0 +1,32 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  annotations:
+    apps.open-cluster-management.io/reconcile-rate: medium
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  creationTimestamp: '2022-10-16T11:29:31Z'
+  generation: 1
+  managedFields:
+    - apiVersion: apps.open-cluster-management.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:apps.open-cluster-management.io/reconcile-rate': {}
+        'f:spec':
+          .: {}
+          'f:pathname': {}
+          'f:type': {}
+      manager: unknown
+      operation: Update
+      time: '2022-10-16T11:29:31Z'
+  name: ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  namespace: user6
+  resourceVersion: '652128'
+  uid: 458bc165-ab61-467b-ad73-4c76cddd2899
+spec:
+  pathname: 'https://github.com/seasonny/kubernetes-summit-2022-workshop'
+  type: Git
+

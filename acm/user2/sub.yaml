@@ -13,7 +13,7 @@ metadata:
     app.kubernetes.io/part-of: test-app
     apps.open-cluster-management.io/reconcile-rate: medium
   name: test-app-subscription-1
-  namespace: acm-template
+  namespace: user2
 spec:
   channel: ggithubcom-seasonny-kubernetes-summit-2022-workshop-ns/ggithubcom-seasonny-kubernetes-summit-2022-workshop
   placement:
