@@ -9,7 +9,7 @@ metadata:
     open-cluster-management.io/user-identity: >-
       c3lzdGVtOnNlcnZpY2VhY2NvdW50Om9wZW4tY2x1c3Rlci1tYW5hZ2VtZW50Om11bHRpY2x1c3Rlci1hcHBsaWNhdGlvbnM=
   name: test-app
-  namespace: jace-test
+  namespace: acm-template
   resourceVersion: '1739788'
   uid: 7a5c0df0-267b-4c2c-8c59-489a6e5d0989
 spec:
