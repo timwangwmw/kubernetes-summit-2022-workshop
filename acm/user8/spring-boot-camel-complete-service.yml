@@ -1,0 +1,32 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    app.openshift.io/vcs-ref: main
+    prometheus.io/path: /metrics
+    jkube.io/git-branch: main
+    prometheus.io/port: "9779"
+    jkube.io/scm-url: https://github.com/spring-projects/spring-boot/spring-boot-camel-complete
+    prometheus.io/scrape: "true"
+    jkube.io/git-url: https://github.com/seasonny/kubernetes-summit-2022-workshop.git
+    app.openshift.io/vcs-uri: https://github.com/seasonny/kubernetes-summit-2022-workshop.git
+    jkube.io/scm-tag: HEAD
+    jkube.io/git-commit: c15726aa85a8133a183517b00735730bc83086e1
+  labels:
+    app: spring-boot-camel-complete
+    provider: jkube
+    version: 1.9.1
+    group: org.eclipse.jkube.quickstarts.maven
+  name: spring-boot-camel-complete
+spec:
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: spring-boot-camel-complete
+    provider: jkube
+    group: org.eclipse.jkube.quickstarts.maven
+  type: NodePort
