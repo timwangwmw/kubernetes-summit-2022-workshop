@@ -15,8 +15,488 @@ metadata:
   name: test-app-subscription-1
   namespace: acm-demo
 spec:
-  channel: ggithubcom-seasonny-kubernetes-summit-2022-workshop-ns/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  channel: acm-demo/ggithubcom-seasonny-kubernetes-summit-2022-workshop
   placement:
     placementRef:
       name: test-app-placement-1
       kind: PlacementRule
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user1
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user1
+spec:
+  channel: user1/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user2
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user2
+spec:
+  channel: user2/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user3
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user3
+spec:
+  channel: user3/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user4
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user4
+spec:
+  channel: user4/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user5
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user5
+spec:
+  channel: user5/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user6
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user6
+spec:
+  channel: user6/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user7
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user7
+spec:
+  channel: user7/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user8
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user8
+spec:
+  channel: user8/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user9
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user9
+spec:
+  channel: user9/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user10
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user10
+spec:
+  channel: user10/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user11
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user11
+spec:
+  channel: user11/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user12
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user12
+spec:
+  channel: user12/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user13
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user13
+spec:
+  channel: user13/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user14
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user14
+spec:
+  channel: user14/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user15
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user15
+spec:
+  channel: user15/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user16
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user16
+spec:
+  channel: user16/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user17
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user17
+spec:
+  channel: user17/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user18
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user18
+spec:
+  channel: user18/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user19
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user19
+spec:
+  channel: user19/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-current-commit: 8ff35bb749ba072d05a2b7ea26a6bca1e960638d
+    apps.open-cluster-management.io/git-path: acm/user20
+    apps.open-cluster-management.io/reconcile-option: merge
+    open-cluster-management.io/user-group: c3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgsc3lzdGVtOmF1dGhlbnRpY2F0ZWQ=
+    open-cluster-management.io/user-identity: b3BlbnRsYy1tZ3I=
+  labels:
+    app: test-app
+    app.kubernetes.io/part-of: test-app
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: test-app-subscription-1
+  namespace: user20
+spec:
+  channel: user20/ggithubcom-seasonny-kubernetes-summit-2022-workshop
+  placement:
+    placementRef:
+      name: test-app-placement-1
+      kind: PlacementRule
+

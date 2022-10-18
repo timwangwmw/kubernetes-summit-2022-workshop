@@ -9,4 +9,244 @@ spec:
   clusterSelector:
     matchLabels:
       openshift: "4.9"
-
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user1
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user2
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user3
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user4
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user5
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user6
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user7
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user8
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user9
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user10
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user11
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user12
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user13
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user14
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user15
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user16
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user17
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user18
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user19
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: test-app-placement-1
+  namespace: user20
+  labels:
+    app: test-app
+spec:
+  clusterSelector:
+    matchLabels:
+      openshift: "4.9"
+---
